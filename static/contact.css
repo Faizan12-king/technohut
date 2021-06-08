@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+    
+}
+html,body{
+    overflow-x: hidden;
+}
+/* Header and navbar Section*/
+#navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -31px;
+    margin-top: -6px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+
+}
+#navbar img{
+    height: 55px;
+    width: 66px;
+    margin: 9px 15px;
+   
+}
+#logo{
+    margin-right:-15px;
+}
+.logoname{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-family: 'Zen Dots', cursive;
+}
+.slogan{
+    
+font-size: 9px;
+text-decoration: none;
+
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 400px;
+    margin-top: -2px;  
+}
+#navbar li{
+    list-style: none;
+    font-size: 18px;
+}
+#navbar li a{
+text-decoration: none;
+padding: 2px 20px;
+color: black;
+}
+
+#navbar li a:hover{
+    color: darkblue;
+    /* font-size: 15px; */
+    border: 2px solid darkblue;
+    border-radius: 6px;
+    /* font-size: 17px; */
+    border-bottom:none;
+}
+/* landing page */
+.landpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    width: 100%;
+    background:url(/static/contactus.jpg) center center no-repeat;
+    background-size: 1366px 565px;
+}
+.container1{
+    width: 600px;
+    height: 200px;
+    left:0;
+    top:50%;
+    transform: translate(57%, -89%);
+
+}
+.landpage h1{
+    font-size: 44px;
+    opacity: 0.6;
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+}
+.landpage p{
+    font-size: 45px;
+    opacity: 0.1;
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+    color: #3b3b3b;
+
+}
+
+/* Contact Form */
+.maincontainer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 40px;
+    background: rgb(194,204,255);
+    background: linear-gradient(115deg,rgba(194,204,255,1)25%,rgb(94, 120, 255)50%,rgba(198,207,255,1)75%,rgba(255,255,255,1)100%,);
+}
+#container2{
+    background: #fff;
+    width: 800px;
+    max-width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.contact-message{
+    width:100%;
+    text-align: center;
+    
+}
+
+#container2 form{
+    padding:20px 0px 0px 0px;
+}
+.form-row{
+    display: flex;
+    margin: 30px 0;
+}
+.input-data{
+    width: 100%;
+    height: 30px;
+    margin:0 20px;
+    position: relative;
+}
+.form-row textarea{
+    height: 70px;
+}
+.input-data input, .textarea textarea{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.textarea textarea{
+    resize: none;
+    padding-top: 10px;
+}
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label,
+.textarea textarea:valid ~ label
+{
+    transform: translateY(-20px);
+    color: #3b77dd;
+    font-size: 14px;
+}
+.input-data label{
+    position: absolute;
+    bottom: 10px;
+    font-size: 15px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.textarea label{
+    width: 100%;
+    bottom: 30px;
+    background: #fff;
+}
+.input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: black;
+}
+.input-data .underline::before
+.input-data .underline::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #3b77dd;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline::before,.underline::after,
+.textarea textarea:focus ~ .underline::before,.underline::after,
+.input-data input:valid ~ .underline::before,.underline::after,
+.textarea textarea:valid ~ .underline::before,.underline::after{
+    transform: scaleX(1);
+}
+.submit-btn .input-data{
+    height: 30px!important;
+    width: 25px!important;
+}
+.submit-btn .input-data .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    background: rgb(116, 137, 243);
+    transition: all 0.3s;
+}
+.submit-btn .input-data:hover .inner{
+    background: black;
+    
+}
+.submit-btn .input-data .inner input{
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight:500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* contact-details */
+.contact-all{
+    background: lightslategrey;
+}
+#container3{
+    width: 100%;
+    margin:47px auto;
+    
+}
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.center h3 {
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+.center p{
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+}
+   
+
+.contact-details{
+    width: 20%;
+    margin-top: 39px;
+    margin-bottom: 11px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+.map-container{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    
+    
+}
+.map{
+    left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* Media Querie sfor responsive  */
+@media only screen and (max-width:1024px){
+    .landpage{
+        height: 84vh;
+    }
+    .container1{
+        transform: translate(82%, -78%);
+        width: 400px;
+    }
+    .container1 h1{
+        font-size: 32px;
+    }
+    .landpage p{
+        font-size: 28px;
+    }
+   
+}
+@media only screen and (max-width:768px){
+    #navbar ul{
+        margin: 2px 137px;
+    }
+    
+    .container1 {
+        transform: translate(50%, -5%);
+        width: 200px;
+        
+    }
+    .container1 h1 {
+        font-size: 18px;
+    }
+    .landpage p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:425px){
+    #navbar img {
+        height: 40px;
+        width: 52px;
+        margin: 8px -1px;
+    }
+    .logoname {
+        margin-left: 16px;
+        margin-top: 21px;
+        font-size: 13px;
+        font-family: 'Zen Dots', cursive;
+    }
+    .slogan {
+        font-size: 8px;
+        text-decoration: none;
+    }
+    #navbar ul {
+        margin: 2px 13px;
+    }
+    #navbar li {
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    #navbar li a {
+        padding: 2px 11px;    
+    }
+    .landpage{   
+        height: 36vh;
+        background-size: contain;
+    }
+    .container1{
+        transform: translate(50%, 1%);
+    }
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .center h3 {
+        font-size: 17px;
+        padding: 0px;
+        margin-top: 8px;
+    }
+    .contact-details{
+        width: 27%;
+    }
+    
+}
+@media only screen and (max-width:414px){
+    #navbar ul {
+        margin: 2px 0px;
+    }
+    .container1{
+        transform: translate(50%, -1%);
+    }
+    .contact-details {
+        width: 28%;
+    }
+}
+@media only screen and (max-width:412px){
+    .landpage{
+        height: 38vh;
+    }
+    
+    
+}
+@media only screen and (max-width:393px){
+    #navbar img {    
+        height: 37px;
+        width: 42px;
+        margin: 6px -1px;
+    }
+    .logoname {
+        margin-left: 16px;
+        margin-top: 17px;
+        font-size: 12px;
+        font-family: 'Zen Dots', cursive;
+    }
+    .slogan {
+        font-size: 7px;
+        text-decoration: none;
+    }
+    
+    #navbar li {
+        font-size: 67%;
+        margin-top: 5px;
+    }
+    .container1{
+        transform: translate(50%, 0%);
+    }
+    .contact-details {
+        width: 31%;
+    }
+}
+@media only screen and (max-width:375px){
+    .landpage{
+       height: 38vh;
+    }
+    .contact-details {
+        width: 32%;
+    }
+}
+@media only screen and(max-width:360px){
+    .container1{
+            transform: translate(50%, 3%);
+    }
+}
+@media only screen and (max-width:320px){
+    #navbar ul{
+    margin: 0px 0px;
+    }
+    #navbar li {
+        font-size: 68%;
+
+    }
+    #navbar li a{
+        padding: 2px 5px;
+    }
+    .landpage{
+        height: 35vh;
+    }
+    .container1{
+        transform: translate(50%, 9%);
+    }
+    .contact-details {
+        width: 36%;
+    }
+
+}

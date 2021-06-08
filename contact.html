@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technohut</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/all.css">
+    <link rel="stylesheet" href="/static/contact.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="/"><img src="/static/logo2.png" alt=""></a>
+        </div>
+        <h5 class="logoname">TechnoHuT<p class="slogan">Perfection Meets Here</p>
+        </h5>
+        <ul>
+            <li class="item"><a href="/">Home</a></li>
+            <li class="item"><a href="/">Services</a></li>
+            <li class="item"><a href="/about">About</a></li>
+            <li class="item"><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="landpage">
+        <div class="container1">
+            <h1>Contact Us</h1>
+            <p>Perfection Meets Here</p>
+        </div>
+    </section>
+    <div class="maincontainer">
+        <div id="container2">
+
+            <div class="contact-message">
+                <h1>Connect With Us:</h1>
+                <p>Feel free to say Hello. We will connect with you with lightning speed!</p>
+            </div>
+            <form action="/contact", method="post">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" name="firstname" id="name" required>
+                        <div class="underline"></div>
+                        <label>First Name </label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" name="lastname" id="name" required>
+                        <div class="underline"></div>
+                        <label>Last Name </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="email" name="email" id="email" required>
+                        <div class="underline"></div>
+                        <label>Email Address </label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" name="subject" id="subject" required>
+                        <div class="underline"></div>
+                        <label>Subject</label>
+                    </div>
+                </div>
+                <div class="form-row textarea">
+                    <div class="input-data">
+                        <textarea name="message" id="message" required cols="30" rows="10"></textarea>
+                        <div class="underline"></div>
+                        <label>Message Us</label>
+                    </div>
+                </div>
+                <div class="form-row submit-btn">
+                    <div class="input-data">
+                        <div class="inner">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-all">
+        <div id="container3">
+            <div class="contact-container">
+                <div class="contact-details">
+                    <div class="icon">
+                        <i class="fas fa-phone-volume fa-2x"></i> 
+                    </div>
+                    <div class="call center">
+                        <h3>Call us:</h3>
+                        <p>+91 6393086038</p>
+                        <p>1800 1200</p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="icon">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </div>
+                    <div class="center">
+                        <h3>Whatsapp us:</h3>
+                        <p>+91 7275529099</p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="icon">
+                        <i class="fas fa-envelope-square fa-2x"></i>
+                    </div>
+                    <div class="center">
+                        <h3>Email us:</h3>
+                        <p><a href="www.gmail.com">fa392766@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="icon">
+                        <i class="far fa-address-card fa-2x"></i>
+                    </div>
+                    <div class="center">
+                        <h3>Address</h3>
+                        <p>Balaganj,Lucknow <br>India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28471.018936074826!2d80.86282726573017!3d26.875637047660007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfe19cc1b73f1%3A0x79b6558fd77c219c!2sAstha%20Mahalaxmi%20Poojan%20Bhandar!5e0!3m2!1sen!2sin!4v1620822953332!5m2!1sen!2sin"
+                    width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Copyright © 2019 www.technohut.xyzr | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

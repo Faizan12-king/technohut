@@ -1,0 +1,85 @@
+let btn = document.getElementsByClassName("btnind");
+        let slide = document.getElementById("slide")
+        console.log(window.innerWidth)
+        btn[0].onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            for (i = 0; i < 4; i++)
+            btn[i].classList.remove("active");
+            this.classList.add("active");
+        }
+        btn[1].onclick = function () {
+            if(window.innerWidth===1024){
+                slide.style.transform = "translateX(-1024px)"
+            }else
+            if(window.innerWidth===768){
+                slide.style.transform = "translateX(-768px)"
+            }else
+            if(window.innerWidth===425){
+                slide.style.transform = "translateX(-425px)"
+            }else
+            if(window.innerWidth===375){
+                slide.style.transform = "translateX(-375px)"
+            }
+            else
+            slide.style.transform = "translateX(-1600px)";
+            for (i = 0; i < 4; i++){
+                btn[i].classList.remove("active");
+                this.classList.add("active");
+            }
+        }
+        btn[2].onclick = function () {
+          
+            if(window.innerWidth===1024){
+                slide.style.transform = "translateX(-2048px)"
+            }else
+            if(window.innerWidth===768){
+                slide.style.transform = "translateX(-1536px)"
+            }else
+            if(window.innerWidth===425){
+                slide.style.transform = "translateX(-850px)"
+            }else
+            if(window.innerWidth===375){
+                slide.style.transform = "translateX(-750px)"
+            }
+            else{
+            slide.style.transform = "translateX(-1600px)";
+            }
+          
+            for (i = 0; i < 4; i++)
+                btn[i].classList.remove("active");
+            this.classList.add("active");
+        }
+        btn[3].onclick = function () {
+        
+            if(window.innerWidth===1024){
+                slide.style.transform = "translateX(-3072px)"
+            }else
+            if(window.innerWidth===768){
+                slide.style.transform = "translateX(-2304px)"
+            }else
+            if(window.innerWidth===425){
+                slide.style.transform = "translateX(-1275px)"
+            }else
+            if(window.innerWidth===375){
+                slide.style.transform = "translateX(-1125px)"
+            }
+            else{
+            slide.style.transform = "translateX(-1600px)";
+            }
+            
+            for (i = 0; i < 4; i++)
+            btn[i].classList.remove("active");
+            this.classList.add("active");
+        }
+
+        
+        </script>
+
+
+        button html
+        <div class="indicator">
+            <span class="btnind active"></span>
+            <span class="btnind indSecond"></span>
+            <span class="btnind indThird"></span>
+            <span class="btnind indFourth"></span>
+        </div>

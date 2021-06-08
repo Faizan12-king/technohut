@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    width: 100%;  
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+}
+
+/* Header and navbar Section*/
+#navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -31px;
+    margin-top: -6px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+
+}
+#navbar img{
+    height: 55px;
+    width: 66px;
+    margin: 9px 15px;
+   
+}
+#logo{
+    margin-right:-15px;
+}
+.logoname{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-family: 'Zen Dots', cursive;
+}
+.slogan{
+    
+font-size: 9px;
+text-decoration: none;
+
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 400px;
+    margin-top: -2px;  
+}
+#navbar li{
+    list-style: none;
+    font-size: 18px;
+}
+#navbar li a{
+text-decoration: none;
+padding: 2px 20px;
+color: black;
+}
+
+#navbar li a:hover{
+    color: darkblue;
+    /* font-size: 15px; */
+    border: 2px solid darkblue;
+    border-radius: 6px;
+    /* font-size: 17px; */
+    border-bottom:none;
+}/* landing page */
+#landpage{
+    background: url(/static/Landing2.jpg) center center no-repeat;
+    width: 100%;
+    height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    
+}
+.land-content{
+    margin-left: 10%;
+}
+.land-heading{
+    font-size: 30px;
+    text-shadow:  -6px -2px 6px black;
+    
+}
+
+#landpage p{
+    margin-top: 12px;
+    text-shadow:  6px 0px 8px black;
+    font-size: 14px;
+    
+}
+.btn-container{
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.btn{
+    font-size: 13px;
+    text-align: center;
+    /* margin-left: 355px;
+    margin-right: 901px;
+    margin-top: 17px; */
+    padding: 8px 20px;
+    background-color: #3b77dd;
+    outline: none;
+    border-radius: 18px;
+    text-decoration: none;
+    font-weight: 14px;
+    color: white;
+    transition: 0.2s ease-in;
+}
+.btn a{
+    color:white;
+    
+} 
+.btn:hover{
+   background-color: black;
+   color: white;
+   
+}
+
+/* why us Section */
+.whyus{
+    height: 80vh;
+    background: url(/static/svg.png) top center no-repeat;
+    margin: 48px 0px 0px 0px;    
+    display: flex;   
+}
+.col1{
+    flex: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.why{
+    width: 190px;
+    height: 190px;
+    background-color: white;
+    box-shadow: 13px 13px 0px #32ded5;
+    border-radius: 7px;
+}
+.why p{
+    text-align: center;
+    margin-top: 75px;
+    font-family: 'Original Surfer', cursive;
+    color: black;
+    font-size: 23px;
+    text-shadow: -3px 0px 6px #32ded5;
+}
+.col2{
+  flex: 60%;
+  
+ 
+}
+.col21{
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    width: 220x;
+    height: 180px;
+    
+    
+}
+.card1 img{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 211px;
+    margin: 7px 122px 5px -32px;
+    height: 138px;
+    border: 3px solid white;
+    border-radius: 36px 0px;
+    box-shadow:  6px 6px 15px black;
+    transition: .2s ease-in;
+}
+.card1 h4, .card1 p{
+    text-align: center;
+    font-size: 13px;
+    margin: 2px 0px 0px -152px;
+    
+}
+.col2{
+    flex:60%;
+    width: 750px;
+}
+
+.col22{
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card2{
+    width: 220x;
+    height: 180px;
+    
+}
+.card2 img{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 211px;
+    margin: 7px 122px 5px -32px;
+    height: 138px;
+    border: 3px solid white;
+    border-radius: 36px 0px;
+    box-shadow:  6px 6px 15px black;
+    transition: .2s ease-in;
+}
+.card2 h4, .card2 p{
+    text-align: center;
+    font-size: 13px;
+    margin: 2px 0px 0px -152px;
+    
+}
+.card1 img:hover{
+    border: 3px solid black;
+    
+}
+.card2 img:hover{
+    border: 3px solid black;
+    
+}
+
+/* SERVIES  SECTION*/
+#services-container{
+    width: 100%;
+    margin-top: 50px;
+}
+.sercol1{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom:50px ;
+    
+    
+    
+}   
+.sercol1 h1{
+    font-family: 'Zen Dots', cursive;
+    font-size: 28px;
+}
+.sercol2{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;  
+    flex-flow: wrap;
+}
+.card{
+    border: 4px solid #3b77dd;
+    border-radius: 30px;
+    padding-top: 44px;
+    width: 20%;
+    height: 249px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card img{
+    height: 60px;
+    width: 60px;
+}
+.card h4{
+    text-align: center;
+    text-align: center;
+    font-size: 17px;
+    
+    
+    
+}
+
+.card-body {
+    padding: 0px 2px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 33px;
+    margin-top: 30px;
+
+}
+.btn1{
+    background-color: #3b77dd;
+    color: white;
+    outline: none;   
+    border-radius:18px;
+    font-size: 13px;
+    padding:5px 10px;
+    transition: 0.2s ease-in;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+
+/* .... for indicator button ...... #435e97  */
+
+*{
+    box-sizing: border-box;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    overflow-x: hidden;
+    margin-top: 100px;
+}
+
+.indicator{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    box-sizing: border-box;
+}
+.btnind{
+    display: block;
+    background-color: #435e97;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+    transition: all .3s;
+    
+}
+.active{
+    width: 18px;
+    background-color: black;
+}
+
+.slideCol{
+    
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-img{
+    width: 200px;
+    height: 300px;
+    flex:1;
+    
+}
+.user-img > img{
+    width: 200px;
+    height: 300px;
+    margin-left: 50px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 1px gray;
+}
+.user-text{
+    height: 200px;
+    border: 12px solid #435e97 ;
+    border-radius: 20px;
+    z-index: -1;
+    font-family: 'Original Surfer', cursive;
+   
+    
+}
+.user-text > p {
+    margin-left: 70px;
+}
+.user-text h3{
+    margin-left: 70px;
+    color: black;
+}
+.slideRow{
+    display: flex;
+    width: 3000px;
+    margin-left: 40px;
+    transition: all ease-in-out .5s;
+    margin-top: 60px;
+}
+@media only screen and (max-width:1366px){
+
+.slideRow{
+  transform: translateX(-10px);
+}
+    .colTwo{
+        transform: translateX(-30px);
+    }
+    .colThree{
+        transform: translateX(-10px);
+    }
+    .colFour{
+        transform: translateX(-37px);
+    }
+}
+
+@media only screen and (min-width:1600px){
+    .colThree{
+        margin-left: 150px;
+    }
+    .colFour{
+        margin-right: -50px;
+    }
+    .indThird{
+        display: none;
+    }
+    .indFourth{
+        display: none;
+    }
+}
+@media only screen and (min-width:2560px){
+    .slideRow{
+        margin-left: 0;
+    }
+    .colThree{
+        margin-left: 0;
+    }
+    .colFour{
+        margin-right: -380px;
+    }
+  
+
+}
+@media only screen and (max-width:1440px){
+    .slideRow{
+        margin-left: -20px;
+    }
+    .slideCol{
+        width:23.5%;
+    }
+    .indThird{
+        display: none;
+    }
+    .indFourth{
+        display: none;
+    }
+    .colThree{
+        margin-left: 260px;
+    }
+    .colTwo{
+        margin-right: -70px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .indThird{
+        display: initial;
+    }
+    .indFourth{
+        display: initial;
+    }
+    .colOne{
+        transform: translateX(165px);
+    }
+    .colTwo{
+        transform: translateX(480px);
+    }
+    .colThree{
+        transform: translateX(630px);
+    }
+    .colFour{
+        transform: translateX(950px);
+    }
+}
+
+
+    
+@media only screen and (max-width:375px){
+    .colOne{
+        transform: translateX(12.5px);
+    }
+    .colTwo{
+        transform: translateX(-315px);
+    }
+    .colThree{
+        transform: translateX(-832px);
+    }
+    .colFour{
+        transform: translateX(-1159px);
+    }
+    .user-text{
+        width:50%;
+        margin-left: 1.5%;
+        margin-top: 20px;
+    }
+    .user-img > img{
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(42.8%);
+    }
+    .user-text{
+        height: 220px;
+    }
+}
+
+/* Footer section */
+footer{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* Responsive design at 425px-Mobile-L */
+
+@media only screen and (max-width:1024px){
+    .card-body{
+        margin-top: 33px;
+
+    }
+    .col2{
+        margin-top: 12px;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    #navbar ul {
+       
+        margin: 2px 137px;
+    }
+    
+    .col2 {
+        margin-top: 21px;
+        margin-bottom: 6px;
+    }
+    .card{
+        width: 257px;
+    }
+    .colOne{
+        transform: translateX(524px);
+    }
+    .colTwo{
+        transform: translateX(589px);
+    }
+    .colThree{
+        transform: translateX(454px);
+    }
+    .colFour {
+        transform: translateX(519px);
+    }
+    .user-text{
+        margin-top: 28%;
+        transform: translate(-133%,-50%);
+    }
+}
+
+
+@media only screen and (max-width:425px){
+    
+    #navbar img {
+        height: 40px;
+        width: 52px;
+        margin: 8px -1px;
+    }
+    .logoname {
+        margin-left: 16px;
+        margin-top: 21px;
+        font-size: 13px;
+        font-family: 'Zen Dots', cursive;
+    }
+    .slogan {
+        font-size: 8px;
+        text-decoration: none;
+    }
+    #navbar ul {
+        margin: 2px 13px;
+    }
+    #navbar li {
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    #navbar li a {
+        padding: 2px 11px;    
+    }
+    /* Landing page */
+    #landpage{
+        height: 70vh;
+    }
+    .land {
+        font-size: 28px;
+        padding-right: 0;
+    }
+    #landpage p {
+        padding-right: 0;
+        font-size: 15px;
+    }
+    .btn{    
+    margin-top: 3px;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    }
+
+    /* Why US SEction */
+
+    .whyus {
+        height: 191vh;
+        flex-direction: column;
+    }
+    .col1{
+        margin-top: 30px;
+    }
+    .col2 {
+        flex: 60%;
+        width: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .col21 {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        transform: translate(-28%, 4%);
+    }
+    .card1 {
+        width: 220x;
+        height: 180px;
+        margin-top: 25px;
+    }
+    .card1 img {
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 211px;
+        margin: 7px 122px 5px -32px;
+        height: 138px;
+        border: 3px solid white;
+        border-radius: 36px 0px;
+        box-shadow: 6px 6px 15px black;
+        transition: .2s ease-in;
+    }
+    .col22 {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        transform: translate(-28%, 10%);
+    }
+    .card2{
+        margin-top: 25px;
+    }
+    #services-container{
+        margin-top: 128px;
+    }
+    .sercol1{   
+    margin-bottom: 130px;
+    }
+    .sercol2{
+    flex-direction: column;
+    flex-flow: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(90px, -87px);
+    }
+    .card{
+        width: 57%;
+    }
+    .slideCol{
+        display: initial;
+     }
+     .user-img > img{
+         margin-left: auto;
+         margin-right: auto;
+         transform: translate(50%);
+     }
+ 
+     .user-text{
+         width:55%;
+         margin-left: 1.5%;
+         margin-top: 20px;
+     }
+     .user-text > p {
+         margin-left: 20px;
+     }
+     .user-text h3{
+         margin-left: 20px;
+         color: black;
+     }
+     .colOne{
+        transform: translateX(28px);;
+     }
+     .colTwo{
+         transform: translateX(-259px);
+     }
+     .colThree{
+         transform: translateX(-739px);
+     }
+     .colFour{
+         transform: translateX(-1025px);
+     }
+     .user-text{
+        transform: translate(-3px, -31px);
+     }
+ }
+
+@media only screen and (max-width:414px){
+    #navbar ul {
+        margin: 2px 0px;
+    }
+    .col1 {
+        margin-top: -403px;
+        margin-bottom: -674px;
+    }
+    .col21{
+        margin-bottom: -770px;
+    }
+    #services-container {
+        margin-top: -339px;
+    }
+    
+}
+@media only screen and (max-width:393px){
+    #navbar img {    
+        height: 37px;
+        width: 42px;
+        margin: 6px -1px;
+    }
+    .logoname {
+        margin-left: 16px;
+        margin-top: 17px;
+        font-size: 12px;
+        font-family: 'Zen Dots', cursive;
+    }
+    .slogan {
+        font-size: 7px;
+        text-decoration: none;
+    }
+    
+    #navbar li {
+        font-size: 67%;
+        margin-top: 5px;
+    }
+    #navbar li a {
+        padding: 2px 4px;
+    }    
+    .landpage{   
+        height: 53vh;
+    }
+    .container1{
+        transform: translateY(3%);
+    }
+    .landpage h1 {
+        font-size: 26px;
+    }
+    .landpage p {
+        font-size: 30px;
+    }
+
+    /* Why US Section */
+    .whyus {
+        height: 132vh;
+        flex-direction: column;
+    }
+    .col2{
+        width: 681px;
+        transform: translateX(-5px);
+    }
+    .col21{
+        transform: translate(-26%, 4%);
+    }
+    .col22{
+        transform: translate(-26%, 4%);;
+    }
+    .sercol2{
+        top: 50%;
+        left: 50%;
+        transform: translate(77px, -87px);
+    }
+    .card-body{
+        margin-top: 15px;
+    }
+    .col1 {
+        margin-top: -100px;
+        margin-bottom: -147px;
+    }
+    .col21{
+        margin-bottom: -10px;
+        margin-top: 1px;
+    }
+    #services-container {
+        margin-top: 93px;
+    }
+    .colOne {
+        transform: translateX(26px);
+    }
+    .user-text {
+        transform: translate(-2px, -31px);
+        width: 52%;
+    }
+    .colTwo {
+        transform: translateX(-278px);
+    }
+    .colThree {
+        transform: translateX(-780px);
+    }
+    .colFour {
+        transform: translateX(-1091px);
+    }
+
+    
+}
+@media only screen and (max-width:375px){
+    #navbar img {
+        height: 31px;
+        width: 36px;
+    }
+    .logoname {
+        margin-left: 15px;
+        margin-top: 14px;
+        font-size: 10px;
+    }
+    .slogan{
+        font-size: 6px;
+    }
+    #navbar ul {
+        margin: 2px 24px;
+    }
+    #navbar li {
+        font-size: 72%;
+        margin-top: 5px;
+    }
+    #services-container {
+        margin-top: 100px;
+    }
+    .user-text{
+        width: 50%;
+    }
+    .colTwo {
+        transform: translateX(-303px);
+    }
+    .colThree {
+        transform: translateX(-820px);
+    }
+    .colFour {
+        transform: translateX(-1147px);
+    }
+
+}
+@media only screen and (max-width:320px){
+    .col21{
+        top: 50%;
+        left: 50%;
+        transform: translate(-34%, 4%);
+    }
+    .col22{
+        top: 50%;
+        left: 50%;
+        transform: translate(-35%, 4%);
+    }
+    #services-container {
+        margin-top: 103px;
+    }
+    .sercol2{
+        transform: translate(50px, -87px);
+    }
+    .card {
+        width: 69%;
+    }
+    .user-text {
+        width: 44%;
+    }
+    
+}

@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+    
+}
+
+/* Header and navbar Section*/
+#navbar{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -31px;
+    margin-top: -6px;
+    background-color: #fff;
+    position: fixed;
+
+}
+#navbar img{
+    height: 55px;
+    width: 66px;
+    margin: 9px 15px;
+   
+}
+#logo{
+    margin-right:-15px;
+}
+.logoname{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-family: 'Zen Dots', cursive;
+}
+.slogan{
+    
+font-size: 9px;
+text-decoration: none;
+
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 400px;
+    margin-top: -2px;  
+}
+#navbar li{
+    list-style: none;
+    font-size: 18px;
+}
+#navbar li a{
+text-decoration: none;
+padding: 2px 20px;
+color: black;
+}
+
+#navbar li a:hover{
+    color: darkblue;
+    /* font-size: 15px; */
+    border: 2px solid darkblue;
+    border-radius: 6px;
+    /* font-size: 17px; */
+    border-bottom:none;;
+}
+/* Landing page */
+
+.landpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    width: 100%;
+    background:url(/static/aboutus.jpg) center center no-repeat;
+    background-size: 1366px 565px;
+}
+.container1{
+    width: 600px;
+    height: 200px;
+    left:0;
+    top:50%;
+    transform: translateY(-38%);
+}
+.landpage h1{
+    font-size: 44px;
+    opacity: 0.6;
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+}
+.landpage p{
+    font-size: 50px;
+    opacity: 0.1;
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+    color: #3b3b3b;
+
+}
+
+
+/* who for who we are */
+.who{
+  height: 46vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  
+}
+.who-text{
+    /* background: #3b77dd; */
+    height: 263px;
+    width: 1080px;
+    box-sizing: border-box;
+    border-radius: 35px 0px 36px 35px;
+}
+.who h1{
+  text-align: center;
+  font-family: 'Zen Dots', cursive;
+  font-size: 29px;
+  padding: 19px;
+  text-decoration: underline;
+}
+.who p{
+  text-align: left;
+  color: black;
+  padding: 25px;
+  line-height: 20px;
+}
+.who-img img{
+  height: 263px;
+  width: 268px;
+}
+/* how for how we found */
+.how{
+    height: 46vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.how-img img{
+    height: 263px;
+    width: 268px;
+}
+.how h1{
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+    font-size: 29px;
+    padding: 19px;
+    text-decoration: underline;
+}
+.how p{
+    text-align: left;
+    color: black;
+    padding: 25px;
+    line-height: 20px;
+}
+.how p span{
+    font-family: 'Original Surfer', cursive;
+    font-style: italic;
+}
+
+/* .stage {
+    animation: animateBg 50s linear infinite;
+    background-image: linear-gradient(0deg,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,grey,white);
+    background-size: 100% 1100%;
+    height: 92vh;
+    width: 100%;
+  }
+  @keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 0% 100%; }
+  } */
+
+
+
+  /* footer */
+  footer{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+@media only screen and (max-width:1024px){
+    .landpage{
+        background-size: contain;
+        height: 84vh;
+    }
+    /* #navbar ul{
+        margin: 2px 136px;
+    } */
+    .stage{
+        margin-top: 50px;
+    }
+    .container1 {
+        transform: translateY(-32%);
+    }
+    .who {
+        height: 56vh;
+        margin-top: -38px;
+    }
+    .how {
+        height: 69vh;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #navbar ul{
+        margin: 2px 137px;
+    }
+    .stage {
+        margin-top: 0px;
+    }
+    .how {
+        height: 83vh;
+        margin-top: 48px;
+    }
+    
+}
+@media only screen and (max-width:425px){
+#navbar img {
+    height: 40px;
+    width: 52px;
+    margin: 8px -1px;
+}
+.logoname {
+    margin-left: 16px;
+    margin-top: 21px;
+    font-size: 13px;
+    font-family: 'Zen Dots', cursive;
+}
+.slogan {
+    font-size: 8px;
+    text-decoration: none;
+}
+#navbar ul {
+    margin: 2px 13px;
+}
+#navbar li {
+    font-size: 13px;
+    margin-top: 7px;
+}
+#navbar li a {
+    padding: 2px 11px;    
+}
+.landpage{   
+    height: 61vh;
+}
+.container1{
+    transform: translateY(-2%);
+}
+.landpage h1 {
+    font-size: 26px;
+}
+.landpage p {
+    font-size: 30px;
+}
+.stage{
+    height: 280vh;
+}
+.who{
+    flex-wrap: wrap;
+}
+.who-img{
+    margin-top: 107px;
+}
+.how{
+    flex-wrap: wrap;
+}
+.how-img{
+    margin-top: 329px;
+}
+
+}
+@media only screen and (max-width:414px){
+    #navbar ul {
+        margin: 2px 0px;
+    }
+    .landpage{
+        height: 36vh;
+    }
+    .how-img {
+        margin-top: 142px;
+    }
+    .stage {
+        height: 163vh;
+    }
+}
+@media only screen and (max-width:414px){
+    .stage {
+        height: 169vh;
+    }
+}
+@media only screen and (max-width:393px){
+    #navbar img {    
+        height: 37px;
+        width: 42px;
+        margin: 6px -1px;
+    }
+    .logoname {
+        margin-left: 16px;
+        margin-top: 17px;
+        font-size: 12px;
+        font-family: 'Zen Dots', cursive;
+    }
+    .slogan {
+        font-size: 7px;
+        text-decoration: none;
+    }
+    
+    #navbar li {
+        font-size: 67%;
+        margin-top: 5px;
+    }
+    .landpage{
+        height: 35vh;
+    }
+    .container1{
+        transform: translateY(3%);
+    }
+    .landpage h1 {
+        font-size: 25px;
+    }
+    .landpage p {
+        font-size: 28.5px;
+    }
+    .who-img{
+        margin-top: 132px;
+    }
+    .how-img {
+        margin-top: 192px;
+    }
+    .stage{
+        height: 184vh;
+    }
+    footer{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    
+}
+@media only screen and (max-width:375px){
+    .stage{
+        height: 186vh;
+    }
+
+}
+@media only screen and (max-width:360px){
+    .landpage{
+        height: 38vh;
+    }
+    .stage{
+    height:199vh;
+    }
+}
+@media only screen and (max-width:320px){
+    #navbar ul{
+    margin: 0px 0px;
+    }
+    #navbar li {
+        font-size: 68%;
+
+    }
+    #navbar li a{
+        padding: 2px 5px;
+    }
+    .landpage{
+        height: 35vh;
+    }
+    .container1{
+        transform: translateY(8%);
+    }
+    .landpage h1 {
+        font-size: 24px;
+    }
+    .landpage p {
+        font-size: 27.5px;
+    }
+    .stage{
+        height: 227vh;
+    }
+    .who-img{
+        margin-top: 209px;
+    }
+    .how-img{
+        margin-top: 362px;
+    }
+}

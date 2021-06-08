@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+    
+}
+
+/* Header and navbar Section*/
+#navbar{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -31px;
+    margin-top: -6px;
+    background-color: #fff;
+    position: fixed;
+
+}
+#navbar img{
+    height: 55px;
+    width: 66px;
+    margin: 9px 15px;
+   
+}
+#logo{
+    margin-right:-15px;
+}
+.logoname{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-family: 'Zen Dots', cursive;
+}
+.slogan{
+    
+font-size: 9px;
+text-decoration: none;
+
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 400px;
+    margin-top: -2px;  
+}
+#navbar li{
+    list-style: none;
+    font-size: 18px;
+}
+#navbar li a{
+text-decoration: none;
+padding: 2px 20px;
+color: black;
+}
+
+#navbar li a:hover{
+    color: darkblue;
+    font-size: 15px;
+    border: 2px solid darkblue;
+    border-radius: 6px;
+    font-size: 17px;
+    border-bottom:none;
+}
+
+
+
+/* footer */
